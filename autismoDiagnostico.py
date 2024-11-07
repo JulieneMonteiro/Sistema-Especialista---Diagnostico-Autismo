@@ -97,6 +97,7 @@ respostas = []  # Lista para armazenar as respostas
 indice_pergunta = 0  # Índice para rastrear a pergunta atual
 pontuacao_total = 0.0 # Variável para armazenar a pontuação total do formulário
 
+# Pontuações inicias dos tópicos
 pontuacoes_topicos = {
     "Comunicação": 0,
     "Comportamento": 0,
@@ -237,6 +238,7 @@ botaoVoltar.pack(side="left", padx=10)
 # Exibir a primeira pergunta
 mostrar_pergunta()
 
+# Função para exibição da mensagem de conclusão final
 def exibir_mensagemFinal():
     label_pergunta.pack_forget()
     instrucoes.pack_forget()
